@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: almarai;
+}
+.section-padding {
+	padding: 50px 0;
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+header {
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+}
+.vid-bg {
+	position: absolute;
+    right: -373px;
+	bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.nav-area {
+	height: 60px;
+	position: absolute;
+	width: 100%;
+}
+.logo {
+	margin: 10px 0px;
+	height: 60px;
+	float: left;
+	color: #fff;
+	font-size: 35px;
+	text-transform: capitalize;
+}
+.menu-area {
+	float: left;
+	list-style: none;
+	margin: 80px;
+}
+.menu-area li {
+	display: inline-block;
+	margin: 0 5px;
+}
+.menu-area li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 12px;
+	font-size: 1rem;
+	font-weight: 500px;
+	border-radius: 25px ;
+	transition: all .3s ease;
+
+	
+}
+.menu-area li.active a {
+	color: #fff;
+}
+.menu-area li a:hover {
+	box-shadow:0 0 2rem #926f34;
+	background-color: #926f34;
+}
+header .welcome-text {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.welcome-text h2 {
+	color: #926f34;
+	font-size: 80px;
+	margin: 0;
+}
+.welcome-text p {
+	color: #926f34;
+	font-size: 18px;
+	width: 45%;
+	line-height: 1.8;
+	margin: auto;
+}
+.btn {
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #926f34;
+    color: #fff;
+	text-decoration: none;
+	font-family: almarai;
+}
+/*responsive*/
+
+@media (min-width: 767px) and (max-width: 991px) {
+
+	.welcome-text p {
+		font-size: 16px;
+        margin-bottom: 18px;
+        margin-left: -160px;
+	}
+}
+@media (max-width: 767px) {
+	.logo {
+		float: none;
+		text-align: center;
+	}
+	.menu-area {
+        float: none;
+        text-align: center;
+        margin-top: 120px;
+		margin-left: 70px;
+        width: 60%;
+	}
+	.menu-area li {
+		margin: 0;
+	}
+	.menu-area li a {
+		padding: 5px 2px;
+		font-size: 12px;
+	}
+	.logo {
+		margin: 5px 0;
+		font-size: 35px;
+		height: 45px;
+	}
+	.nav-area {
+		height: 90px;
+	}
+	.welcome-text h2 {
+		font-size: 21px;
+        margin-bottom: 18px;
+        margin-left: -30px;
+	}
+	.welcome-text p {
+		width: 90%;
+		line-height: 1.5;
+	}
+}
+.btn1{
+	font-size: 1.0em;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #926f34;
+    color: #fff;
+    font-family: almarai;
+}
