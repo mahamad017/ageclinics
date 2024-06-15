@@ -1,5 +1,3 @@
-const { default: Server } = require("next/dist/server/base-server");
-
 let doctors = document.querySelectorAll(".team");
 let count = 0;
 
@@ -34,4 +32,3 @@ function removeActiveClasses() {
         panel.classList.remove("active");
     });
 }
-
