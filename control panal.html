@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   
 
-    <title>EGY Kleenex</title>
+    <title>AGE Clinincs</title>
 </head>
 
 <body>
@@ -51,105 +51,19 @@
          </button>
         </a>
         </div>
-    </header>   
-      
-    
+    </header>
     <br>
     <br>
     <h2>الاطباء</h2>
     <table>
-        <tr>
+        <thead>
             <th>الطبيب</th>
             <th>اسم الطبيب</th>
             <th>الاختصاص</th>
-        </tr>
-        <tr>
-            <td class="myimage">
-                <img src="images/doctor a.png" width="100px" alt="" />
-            </td>
-            <td>د.مانع الحربي</td>
-            <td>استشاري طب الأمراض الجلدية ،وعضو هيئة التدريس في كلية الطب</td>
-        <tr>
-        <tr>
-            <th>الطبيب</th>
-            <th>اسم الطبيب</th>
-            <th>الاختصاص</th>
-        </tr>
-        <tr>
-            <td class="myimage">
-                <img src="images/doctor33.png" width="100px" alt="" />
-            </td>
-            <td>د.أسيل البريكيت</td>
-            <td>طبيبة أمراض الجلدية والتجميل والعلاج بالليزر</td>
-        <tr>
-        <tr>
-            <th>الطبيب</th>
-            <th>اسم الطبيب</th>
-            <th>الاختصاص</th>
-        </tr>
-        <tr>
-            <td class="myimage">
-                <img src="images/doctor22.png" width="100px" alt="" />
-            </td>
-            <td>د.ميساء الفلاح</td>
-            <td>استشارية الأمراض الجلدية والطب التجميلي</td>
-        <tr>
-        <tr>
-            <th>الطبيب</th>
-            <th>اسم الطبيب</th>
-            <th>الاختصاص</th>
-        </tr>
-        <tr>
-            <td class="myimage">
-                <img src="images/" width="100px" alt="" />
-            </td>
-            <td>د.محمد الخويلد</td>
-            <td>..............</td>
-        <tr>
-        <tr>
-            <tr>
-               
-                <tr>
-                    <th>الطبيب</th>
-                    <th>اسم الطبيب</th>
-                    <th>الاختصاص</th>
-                </tr>
-                <tr>
-                    <td class="myimage">
-                        <img src="images/" width="100px" alt="" />
-                    </td>
-                    <td>د.عبد الله العقيل</td>
-                    <td></td>
-                <tr>
-                <tr>
-                    <tr>
-                        <th>الطبيب</th>
-                        <th>اسم الطبيب</th>
-                        <th>الاختصاص</th>
-                    </tr>
-                    <tr>
-                        <td class="myimage">
-                            <img src="images/" width="100px" alt="" />
-                        </td>
-                        <td>د.العنود الحقيل</td>
-                        <td>............</td>
-                    <tr>
-                    <tr>
-                        <tr>
-                            <th>الطبيب</th>
-                            <th>اسم الطبيب</th>
-                            <th>الاختصاص</th>
-                        </tr>
-                        <tr>
-                            <td class="myimage">
-                                <img src="images/" width="100px" alt="" />
-                            </td>
-                            <td>د.رولا المصري</td>
-                            <td>............</td>
-                        <tr>
-                        <tr>
+        </thead>
+        <tbody id="doctors">
             
-
+        </tbody>
     </table>
 
     <br>
@@ -244,19 +158,6 @@
       </table>
 
 
-
-      <div class="section90">
-        <div class="text1">
-          <h1>شرح تقنياتنا</h1>
-          <p>اضف نص
-          </div>
-          <br>
-        <img class="ab-us" src="images/w1.jpg" alt="" />
-      </p>
-      </div>
-      <br>
-      <br>
-      <br>
   
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -332,6 +233,27 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+        });
+        const doctorsContainer = document.getElementById("doctors");
+
+        const doctorsFetch = async () => {
+            let response = await fetch("https://www.ageclinics.co/api/doctors");
+            let doctorsData = await response.json();
+            return doctorsData.data;
+        }
+
+        doctorsFetch().then(doctors => {
+            doctors.forEach(doctor => {
+                doctorsContainer.innerHTML += `
+                    <tr>
+                        <td class="myimage">
+                            <img src="${doctor.image}" width="100px" alt="" />
+                        </td>
+                        <td> ${doctor.name} </td>
+                        <td> ${doctor.specialize} </td>
+                    </tr>
+                `;
+            });
         });
     </script>
 </body>
