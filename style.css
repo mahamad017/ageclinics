@@ -9,7 +9,7 @@
   }
 
 
- .hero{
+.hero{
     width: 100%;
     height: 100vh;
     position: relative;
@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
 nav{
     padding: 10px 30px;
     display: flex;
@@ -72,63 +72,62 @@ nav{
     }
     .menu-icon{
         display: block;
-        z-index: 999;
     }
     #menuList{
         transition: all 0.5s;
     }
   }
- nav ul li a:hover,
+nav ul li a:hover,
 nav ul li .active a{
   box-shadow:0 0 2rem #926f34;
   background-color: #926f34;
 }
- .content{
+.content{
   transform: translateY(500px);
   text-align: center;
 
   
   
-   
   
-   
-   
+  
+  
+  
 
- }
- .content h1{
-   font-size: 50px;
-   color: #926f34;
-   font-weight: 600;
-   text-align: right;
- }
- .content button{
-   font-size: 2em;
-   border: none;
-   outline: none;
-   padding: 10px 12px;
-   border-radius: 2px;
-   background-color: #926f34;
-   color: #fff;
-   
-   
- }
- .back-video{
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   z-index: -1;
-   
- }
- @media (main-aspect-ratio:16/9){
+}
+.content h1{
+  font-size: 50px;
+  color: #926f34;
+  font-weight: 600;
+  text-align: right;
+}
+.content button{
+  font-size: 2em;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  border-radius: 2px;
+  background-color: #926f34;
+  color: #fff;
+  
+  
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  
+}
+@media (main-aspect-ratio:16/9){
   .back-video{
-     width: 1000%;
-     height: auto;
+    width: 1000%;
+    height: auto;
   }
 }
 @media(max-aspect-ratio:16/9){
   .back-video{
-     width: auto;
-     height: 100%;
+    width: auto;
+    height: 100%;
   }
 }
 .doctors{
@@ -199,7 +198,7 @@ h2{
   width: 100%;
   height: cover;
   display: flex;
- 
+
 }
 .swiper{
   width: 80%;
