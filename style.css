@@ -18,34 +18,65 @@
     align-items: center;
     justify-content: center;
  }
- nav{
-width: 100%;
-position: absolute;
-top: 0;
-left: 0;
-padding: 20px 8%;
-display: flex;
-align-items: center;
-justify-content: center;
- }
- .nav .logo{
-    width: 80px;
-    float: right;
- }
- nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 40px;
- }
- nav ul li a{
-   text-decoration: none;
-   color: #fff;
-   padding: 5px 12px;
-   font-size: 1rem;
-   font-weight: 500px;
-   border-radius: 25px ;
-   transition: all .3s ease;
- }
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #926f34;
+    position: relative;
+    height: 70px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+  
+  nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  nav ul li{
+    list-style-type: none;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .menu-icon{
+    display: none;
+  }
+  
+  .menu-icon i{
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  @media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #926f34;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+  }
  nav ul li a:hover,
 nav ul li .active a{
   box-shadow:0 0 2rem #926f34;
