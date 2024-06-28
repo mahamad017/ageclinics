@@ -168,23 +168,30 @@
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  const swiper = new Swiper('.swiper', {
-      autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-      },
-      loop: true,
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
 
 
-      pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-      },
-  });
-</script>
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        let menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function toggleMenu() {
+            menuList.style.maxHeight == "0px"?
+            menuList.style.maxHeight = "300px" :
+            menuList.style.maxHeight = "0px";
+        }
+    </script>
 </body>
 </html>

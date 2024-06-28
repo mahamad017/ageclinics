@@ -155,6 +155,13 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+        let menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function toggleMenu() {
+            menuList.style.maxHeight == "0px"?
+            menuList.style.maxHeight = "300px" :
+            menuList.style.maxHeight = "0px";
+        }
     </script>
 </body>
 

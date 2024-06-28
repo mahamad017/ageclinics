@@ -72,6 +72,7 @@ nav{
     }
     .menu-icon{
         display: block;
+        z-index: 999;
     }
     #menuList{
         transition: all 0.5s;
