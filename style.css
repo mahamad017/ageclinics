@@ -135,9 +135,10 @@ nav ul li .active a{
   }
 }
 .doctors{
-  width: 830px;
+  width: 100%;
   height: 300px;
   position: relative;
+  
   margin: auto;
   overflow: hidden;
 }
