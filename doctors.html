@@ -1,197 +1,286 @@
-<!DOCTYPE html>
+<!doctype html>
 <html dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<link
+			rel="stylesheet"
+			href="header.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<title>midecal</title>
+	</head>
 
+	<body>
+		<header>
+			<video
+				src="v.mp4"
+				class="vid-bg"
+				autoplay
+				loop
+				muted></video>
 
-    <title>midecal</title>
-</head>
+			<div class="nav-area">
+				<a
+					href="table.html"
+					class="Bbtn"
+					style="color: white"
+					>المواعيد</a
+				>
+				<nav>
+					<div class="logo">
+						<img
+							src="images/logo.png"
+							width="200px"
+							style="align-items: center; margin: 10%" />
+					</div>
+					<ul id="menuList">
+						<li><a href="index.html">الرئيسية</a></li>
+						<li><a href="about us.html">عن ايج</a></li>
+						<li><a href="services.html">خدمات</a></li>
+						<li><a href="blog.html">المدونة</a></li>
+						<li><a href="videos.html">فيديو</a></li>
+						<li><a href="control panal.html">داشبورد</a></li>
+						<li><a href="doctors.html">اطباؤنا</a></li>
+						<li><a href="pharmacy.html">الصيدلية</a></li>
+					</ul>
+					<div class="menu-icon">
+						<i
+							class="bi bi-arrow-bar-down"
+							onclick="toggleMenu()"></i>
+					</div>
+				</nav>
+			</div>
+			<div class="welcome-text">
+				<a
+					a
+					href="index.html"></a>
+				<button class="btn1">للحجز والإستفسار</button>
+			</div>
+		</header>
 
-<body>
-  <header>
-    <video src="v.mp4" class="vid-bg" autoplay loop muted></video>
+		<br />
+		<br />
+		<div class="container77">
+			<div class="content-section77">
+				<div class="card77">
+					<img src="images/doctor a.png" />
+					<h6>د.مانع الحربي</h6>
+					<p>استشاري طب الأمراض الجلدية ،وعضو هيئة التدريس في كلية الطب</p>
+					<div class="d-flex justify-content-evenly py-4">
+						<a
+							href="https://www.instagram.com/drbadrani?igsh=MWRsNDM5ajExYWw0eA=="
+							><i class="bi bi-instagram"></i
+						></a>
+						<a href="https://www.tiktok.com/@drbadrani?_t=8mXFyoZbwSO&&_r=1"
+							><i class="bi bi-tiktok"></i
+						></a>
+						<a href="https://snapchat.com/t/zcXsTsNT"
+							><i class="bi bi-snapchat"></i
+						></a>
+					</div>
+				</div>
+				<div class="card77">
+					<img src="images/doctor22.png" />
+					<h6>د.ميساء الفلاح</h6>
+					<p>استشارية الأمراض الجلدية والطب التجميلي</p>
+					<div class="d-flex justify-content-evenly py-4">
+						<a
+							href="https://www.instagram.com/dr.maisaalfalah?igsh=eDZoODlxcW5pZGt2"
+							><i class="bi bi-instagram"></i
+						></a>
+						<a
+							href="https://www.tiktok.com/@dr.maisaalfalah?_t=8mXG1kKYCfp&&_r=1"
+							><i class="bi bi-tiktok"></i
+						></a>
+						<a
+							href="https://www.snapchat.com/add/dr.maisaalfalah?share_id=RSmlPDeOTR-"
+							><i class="bi bi-snapchat"></i
+						></a>
+					</div>
+				</div>
 
-    <div class="nav-area">
-        <a href="table.html" class="Bbtn" style="color: white;">المواعيد</a>
-        <nav>
-            <div class="logo"><img src="images/logo.png" width="200px" style="align-items: center; margin: 10%;" ></div>
-            <ul id="menuList">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="about us.html">عن ايج</a></li>
-                <li><a href="services.html">خدمات</a></li>
-                <li><a href="blog.html">المدونة</a></li>
-                <li><a href="videos.html">فيديو</a></li>
-                <li><a href="control panal.html">داشبورد</a></li>
-                <li><a href="doctors.html">اطباؤنا</a></li>
-                <li><a href="pharmacy.html">الصيدلية</a></li>
-            </ul>
-            <div class="menu-icon">
-                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-            </div>
-        </nav>
-    </div>
-        <div class="welcome-text">
-            <a a href="index.html"></a>
-            <button class="btn1">
-                للحجز والإستفسار
-            
-            </button>
-        </div>
-    </header>    
+				<div class="card77">
+					<img src="images/doctor33.png" />
+					<h6>د.أسيل البريكيت</h6>
+					<p>طبيبة أمراض الجلدية والتجميل والعلاج بالليزر</p>
+					<div class="d-flex justify-content-evenly py-4">
+						<a
+							href="https://www.instagram.com/dr.aseelalbrekeit?igsh=MWx6c2JwbncwbzBvZQ=="
+							><i class="bi bi-instagram"></i
+						></a>
+						<a href="#"><i class="bi bi-tiktok"></i></a>
+						<a href="#"><i class="bi bi-snapchat"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    
-    <br>
-    <br>
-    <div class="container77">
-        <div class="content-section77">
-            <div class="card77">
-                <img src="images/doctor a.png">
-                <h6>د.مانع الحربي</h6>
-                <p>استشاري طب الأمراض الجلدية ،وعضو هيئة التدريس في كلية الطب</p>
-                <div class="d-flex justify-content-evenly py-4">
-                    <a href="https://www.instagram.com/drbadrani?igsh=MWRsNDM5ajExYWw0eA=="><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@drbadrani?_t=8mXFyoZbwSO&&_r=1"><i class="bi bi-tiktok"></i></a>
-                    <a href="https://snapchat.com/t/zcXsTsNT"><i class="bi bi-snapchat"></i></a>
-                  </div>
-            </div>
-            <div class="card77">
-                <img src="images/doctor22.png">
-                <h6>د.ميساء الفلاح</h6>
-                <p>استشارية الأمراض الجلدية والطب التجميلي</p>
-                <div class="d-flex justify-content-evenly py-4">
-                    <a href="https://www.instagram.com/dr.maisaalfalah?igsh=eDZoODlxcW5pZGt2"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@dr.maisaalfalah?_t=8mXG1kKYCfp&&_r=1"><i class="bi bi-tiktok"></i></a>
-                    <a href="https://www.snapchat.com/add/dr.maisaalfalah?share_id=RSmlPDeOTR-"><i class="bi bi-snapchat"></i></a>
-                  </div>
-            </div>
-            
-            <div class="card77">
-                <img src="images/doctor33.png">
-                <h6>د.أسيل البريكيت</h6>
-                <p>طبيبة أمراض الجلدية والتجميل والعلاج بالليزر</p>
-                <div class="d-flex justify-content-evenly py-4">
-                    <a href="https://www.instagram.com/dr.aseelalbrekeit?igsh=MWx6c2JwbncwbzBvZQ=="><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-tiktok"></i></a>
-                    <a href="#"><i class="bi bi-snapchat"></i></a>
-                  </div>
-            </div>
-            
-        </div>
-    </div>
-    
-    
-    <!--sliider-->
-    <div class="container">
-        <div class="swiper">
-            <h2>نخبة من أطباء الجلدية والتجميل والجراحة، من حملة البوردات والزمالات العالمية</h2>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="images/doctor m.jpg"></div>
-                <div class="swiper-slide"><img src="images/doctor 2.jpg"></div>
-                <div class="swiper-slide"><img src="images/doctor3.jpg"></div>
-            
+		<!--sliider-->
+		<div class="container">
+			<div class="swiper">
+				<h2>
+					نخبة من أطباء الجلدية والتجميل والجراحة، من حملة البوردات والزمالات
+					العالمية
+				</h2>
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide"><img src="images/doctor m.jpg" /></div>
+					<div class="swiper-slide"><img src="images/doctor 2.jpg" /></div>
+					<div class="swiper-slide"><img src="images/doctor3.jpg" /></div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
 
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+		<br />
+		<br />
+		<br />
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
+		<!-- ======= Footer ======= -->
+		<footer id="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 col-md-6 footer-links">
+							<img
+								src="images/logo.png"
+								width="200px" />
+							<p>
+								في ميدكا ولأول مرة في المملكة تقنية طبية<br />
+								حديثة معتمدة تعمل على شد الوجه بالتأثير على الجلد والعضلات معاً.
+								<br />
+								عيادات ميدكا 1999 -2022م
+							</p>
+							<div class="social-links mt-3">
+								<a
+									href="https://twitter.com/asalletg?lang=ar-x-fm"
+									class="twitter"
+									><i class="bx bxl-twitter"></i
+								></a>
+								<a
+									href="https://www.facebook.com/asallet.group"
+									class="facebook"
+									><i class="bx bxl-facebook"></i
+								></a>
+								<a
+									href="https://www.instagram.com/asallet.group/"
+									class="instagram"
+									><i class="bx bxl-instagram"></i
+								></a>
+							</div>
+						</div>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-7 col-md-6 footer-links"><img src="images/logo.png" width="200px"><p>
-                في ميدكا ولأول مرة في المملكة تقنية طبية<br> حديثة معتمدة تعمل على شد الوجه بالتأثير على الجلد والعضلات معاً.
-                <br>
-                عيادات ميدكا 1999 -2022م</p>
-            <div class="social-links mt-3">
-                <a href="https://twitter.com/asalletg?lang=ar-x-fm" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.facebook.com/asallet.group" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/asallet.group/" class="instagram"><i class="bx bxl-instagram"></i></a>
-              </div>
-            </div>
-            
-          <div class="col-lg-3 col-md-6 footer-links" >
-            <h4>الروابط الأكثر استخداماً</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">jsjoalas@gmail.com
-              </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">اتصل بنا</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">00966552231622</a></li>
-            </ul>
-          </div> 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>روابط </h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#"> المواعيد</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">بريد إيجي كلينكس </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">للتوظيف</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">المدونة</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">الشروط والأحكام</a></li>
-            </ul>
-          </div>
+						<div class="col-lg-3 col-md-6 footer-links">
+							<h4>الروابط الأكثر استخداماً</h4>
+							<ul>
+								<li>
+									<i class="bx bx-chevron-right"></i>
+									<a href="#">jsjoalas@gmail.com </a>
+								</li>
+								<li>
+									<i class="bx bx-chevron-right"></i> <a href="#">اتصل بنا</a>
+								</li>
+								<li>
+									<i class="bx bx-chevron-right"></i>
+									<a href="#">00966552231622</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-6 footer-links">
+							<h4>روابط</h4>
+							<ul>
+								<li>
+									<i class="bx bx-chevron-right"></i> <a href="#"> المواعيد</a>
+								</li>
+								<li>
+									<i class="bx bx-chevron-right"></i>
+									<a href="#">بريد إيجي كلينكس </a>
+								</li>
+								<li>
+									<i class="bx bx-chevron-right"></i> <a href="#">للتوظيف</a>
+								</li>
+								<li>
+									<i class="bx bx-chevron-right"></i> <a href="#">المدونة</a>
+								</li>
+								<li>
+									<i class="bx bx-chevron-right"></i>
+									<a href="#">الشروط والأحكام</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div
+					class="container"
+					style="align-items: center; justify-content: center">
+					<div class="copyright">
+						Designed by <strong><span></span></strong>جميع الحقوق محفوظة© شركة
+						ميدك الطبية<br /><img
+							src="images/logom.png"
+							width="100px" />
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
+	</body>
+	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper(".swiper", {
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			loop: true,
 
-      </div>
-    </div>
-    <div class="container" style="align-items: center; justify-content: center;">
-      <div class="copyright">
-        Designed by <strong><span></span></strong>جميع الحقوق محفوظة© شركة ميدك الطبية<br><img src="images/logom.png" width="100px">
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
 
-        
-      </div>
-    </div>
-      </div>
-  </footer>
-  <!-- End Footer -->
-
-
-</body>
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.swiper', {
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        loop: true,
-
-
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-    
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
 </html>
